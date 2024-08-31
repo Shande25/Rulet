@@ -59,7 +59,7 @@
     <br>
     <div class="wheel-container ">
         <div class="wheel">
-            <canvas id="canvas" width="680" height="680"></canvas> <!-- Tamaño del canvas aumentado -->
+            <canvas id="canvas" width="650" height="650"></canvas> <!-- Tamaño del canvas aumentado -->
             <div class="center-circle" onclick="spin()">
             </div>
         </div>
@@ -133,14 +133,14 @@
         let colorStyle = color;
 
         ctx.beginPath();
-        ctx.arc(centerX, centerY, radius - 5, toRad(startDeg), toRad(endDeg));
+        ctx.arc(centerX, centerY, radius - 15, toRad(startDeg), toRad(endDeg)); // Ajuste el tamaño aquí
         let colorStyle2 = darkenColor(color, 0.2);
         ctx.fillStyle = colorStyle2;
         ctx.lineTo(centerX, centerY);
         ctx.fill();
 
         ctx.beginPath();
-        ctx.arc(centerX, centerY, radius - 50, toRad(startDeg), toRad(endDeg));
+        ctx.arc(centerX, centerY, radius - 55, toRad(startDeg), toRad(endDeg)); // Ajuste el tamaño aquí
         ctx.fillStyle = colorStyle;
         ctx.lineTo(centerX, centerY);
         ctx.fill();
